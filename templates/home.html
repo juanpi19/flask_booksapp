@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %} Your Books Are Home {% endblock %}
+
+{% block content %}
+<br>
+
+<div class="container">
+  <div class="heading">
+    <h1>Where Your Books Feel Home</h1>
+
+    <p>
+      Books have always been a part of our lives. Whether we consider ourselves readers or not,
+      books have always been there, merely one of the world's greatest inventions.
+      In this website you will be able to learn about authors from different countries, you will
+      be able to give recommendations so we shape the website to your liking, you will be able to
+      store the books that you have bought and read into a database, and lastly you will be able
+      to search for books in our searching form and the form will remind you how many books you have
+      read so far.
+      Thank you for checking out my website and let the books adventure begin!
+    </p>
+  </div>
+
+</div>
+
+
+<br> <br>
+
+<img src="{{url_for('static', filename='images/books2.jpg')}}"  class="center">
+
+<br><br>
+
+<div class="about-me">
+  <h3>About Me!</h3>
+  <img src="{{url_for('static', filename='images/profilepicture.JPG')}}" class="img-thumbnail" alt="..." width="200" height="133">
+  <br><br>
+  <p>I am Juan Herrera, I am majoring in Computer Information Systems at Spring Hill College.
+    I plan on pursuing a career in Data Science but I also enjoy web development. 
+    <br><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/juanpabloherrerasosa/" target="_blank">https://www.linkedin.com/in/juanpabloherrerasosa/</a>
+    <br><br>
+    GitHub: <a href="https://github.com/juanpi19" target="_blank">https://github.com/juanpi19</a>
+    <br><br>
+    Gmail: juan.p.herrerasosa@gmail.com
+
+  </p>
+</div>
+
+
+
+
+
+{% endblock %}

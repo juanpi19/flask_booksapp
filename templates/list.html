@@ -1,0 +1,108 @@
+{% extends 'base.html'%}
+
+{% block title %} You have this book? {% endblock %}
+
+{% block content %}
+<form action="/list" method="POST">
+<div class="list_heading">
+  <h1>Just Bought a Book? Add it To Your List</h1>
+  <p>In the form below you can add the books you have read or bought to a database.
+    The database will store every book that you own so you never have to keep track of it</p>
+</div>
+
+<br>
+
+<div class="form">
+  <input type="text" placeholder="Name of the Book" name="name" style="width: 600px;">
+</div>
+
+<div class="form">
+  <input type="text" placeholder="Name of Author" name="author"  style="width: 600px;">
+</div>
+
+<div class="form">
+  <input type="text" placeholder="Did You Read This Book? (yes/no)" name="own" style="width: 600px;">
+</div>
+
+<div class="form">
+  <input type="text" placeholder="Add Description of Book" name="description" style="width: 600px;">
+</div>
+
+<br>
+<div class="form">
+  <input type="submit" placeholder="Search" class="btn btn-secondary" style="width: 600px;">
+</div>
+<br>
+<br>
+
+
+</form>
+
+<br><br>
+
+{% for i in p %}
+  <div class="books-list">
+    <li>
+      <font size = "-0.5"> Title: {{i.name}} - Author: {{i.author}} - Read it? {{i.own}}</font> <a href="/delete/{{ i.id }}" class="btn btn-outline-danger btn-sm">Delete</a>
+    </li>
+  </div>
+
+
+{% endfor %}
+
+<br><br>
+
+
+<div class="books-read">
+  <p>You are doing great! Keep it up:
+    You have read: {{x}} books
+  </p>
+
+</div>
+
+
+<br><br><br><br><br><br>
+<form action="/search" method="POST">
+
+<div class="h3heading">
+  <h3>Search For A Book To Get A Description </h3>
+</div>
+
+
+<div class="form2">
+  <input type="text" placeholder="Enter Title of Book" name="name2" style="width: 600px;">
+</div>
+
+
+<br>
+<div class="form2">
+  <input type="submit" placeholder="Search" class="btn btn-secondary" style="width: 600px;">
+</div>
+
+<br><br>
+</form>
+
+{% if request.method == 'POST' %}
+  <div class="description-search">
+    {{l}}
+  </div>
+
+{% endif %}
+
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

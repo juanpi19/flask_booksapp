@@ -1,0 +1,106 @@
+
+body{
+  background-color: #9A8B4F;
+  font: normal 16px Arial, Helvetica, sans-serif;
+}
+
+.nav{
+  background-color: #EFE1CE;
+}
+
+/* Home window */
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.heading{
+  border: 1px grey solid;
+  padding: 20px;
+}
+
+.heading h1{
+  font-family: Tahoma;
+  font-weight: 800;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 30px;
+  border-bottom: 1px grey solid;
+}
+
+.about-me{
+  padding-left: 30px;
+
+}
+
+/* facts */
+
+.facts_heading{
+  border: 1px grey solid;
+  padding: 20px;
+
+}
+
+.facts_heading h1{
+  font-family: Tahoma;
+  font-weight: 800;
+
+}
+
+.flag{
+  padding-left: 30px;
+}
+
+.countries{
+  padding-left: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px grey solid;
+}
+
+.facts2{
+  padding-left: 30px;
+  padding-bottom: 5px;
+
+}
+
+/* List */
+
+.list_heading{
+  border: 1px grey solid;
+  padding: 20px;
+}
+
+.form{
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px grey solid;
+}
+
+.h3heading{
+  text-align: center;
+}
+
+.form2{
+  text-align: center;
+}
+
+.books-list li{
+  text-align: center;
+
+}
+
+.books-read p{
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.description-search{
+  text-align: center;
+
+}

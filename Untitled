@@ -1,0 +1,9 @@
+<!--{% if request.method == 'POST' %}
+  {{df2.author}}
+  <br>
+  {{df2.name}}
+  <br>
+  {{df2.own}}
+  <br>
+  {{df2.description}}
+{% endif %}-->
